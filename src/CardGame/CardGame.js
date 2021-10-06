@@ -1,67 +1,43 @@
 import React from 'react';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
+import { Container, Button, Box, } from '@mui/material';
+import Deck from '../Deck';
 
-
-class Deck extends React.Component {
+class CardGame extends React.Component {
   constructor(props) {
     super(props);
+    this.deck = new Deck();
     this.state = {
-      cards: [
-        '🂡', '🂱', '🃑', '🃁',
-        '🂢', '🂲', '🃒', '🃂',
-        '🂣', '🂳', '🃓', '🃃',
-        '🂤', '🂴', '🃔', '🃄', 
-        '🂥', '🂵', '🃕', '🃅',
-        '🂦', '🂶', '🃖', '🃆',
-        '🂧', '🂷', '🃗', '🃇',
-        '🂨', '🂸', '🃘', '🃈',
-        '🂩', '🂹', '🃙', '🃉',
-        '🂪', '🂺', '🃚', '🃊',
-        '🂫', '🂻', '🃛', '🃋',
-        '🂭', '🂽', '🃝', '🃍',
-        '🂮', '🂾', '🃞', '🃎',
-      ].map((card, cardIndex) => {
-        const color = cardIndex%2 ? 'red' : 'black';
-        const fontSize = '12em';
-        return (
-          <Grid style={{color, fontSize}} key={cardIndex} item>{card}</Grid>
-        );
-      })
+      drawnCard: null,
     };
   }
 
-  shuffle() {
-    this.setState(({ cards }) => {
-      let shuffledCards = [...cards];
-      let temp;
+  drawOne() {
+    const card = this.deck.drawOne();
+    const color = (card.suit === 'b' || card.suit === 'c') ? 'red' : 'black';
+    const fontSize = '16em';
 
-      // Fisher–Yates shuffle
-      for (var i = shuffledCards.length - 1; i > 0; i--) {
-        const card2Index = Math.floor(Math.random() * (i+1));
-        temp = shuffledCards[card2Index];
-        shuffledCards[card2Index] = shuffledCards[i];
-        shuffledCards[i] = temp;
-      }
-
-      return {
-        cards: shuffledCards
-      };
-    })
+    this.setState(() => ({
+      drawnCard: <span style={{color, fontSize}}>{card.card}</span>,
+    }));
   }
 
   render() {
-    const { cards } = this.state;
+    const { drawnCard } = this.state;
     return (
       <Container fixed>
-        <Button onClick={() => this.shuffle()}>Shuffle</Button>
-        <Grid container spacing={1}>
-          {cards}
-        </Grid>
+        <Button onClick={() => this.deck.shuffle()} variant="outlined">Shuffle</Button>
+        <Button onClick={() => this.drawOne()} variant="outlined">Draw Card</Button>
+        { drawnCard ? drawnCard : (
+          <Box sx={{
+            width: '10em',
+            height: '14em',
+            border: '0.25em solid red',
+            borderRadius: '0.3em',
+          }} />
+        )}
       </Container>
     );
   }
 }
 
-export default Deck;
+export default CardGame;
