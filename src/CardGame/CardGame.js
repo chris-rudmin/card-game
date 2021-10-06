@@ -20,7 +20,6 @@ class Deck extends React.Component {
         '🂩', '🂹', '🃙', '🃉',
         '🂪', '🂺', '🃚', '🃊',
         '🂫', '🂻', '🃛', '🃋',
-        '🂬', '🂼', '🃜', '🃌',
         '🂭', '🂽', '🃝', '🃍',
         '🂮', '🂾', '🃞', '🃎',
       ]
@@ -37,13 +36,14 @@ class Deck extends React.Component {
   shuffle() {
     this.setState(({ cards }) => {
       let shuffledCards = [...cards];
-      
+      let temp;
+
       // Fisher–Yates shuffle
-      for (var i = 0;  i < 51; i++) {
-        const card2Index = Math.floor(Math.random() * 50 - i) + i;
-        const card2 = shuffledCards[card2Index];
+      for (var i = shuffledCards.length - 1;  i > 0; i--) {
+        const card2Index = Math.floor(Math.random() * (i+1));
+        temp = shuffledCards[card2Index];
         shuffledCards[card2Index] = shuffledCards[i];
-        shuffledCards[i] = card2;
+        shuffledCards[i] = temp;
       }
 
       return {

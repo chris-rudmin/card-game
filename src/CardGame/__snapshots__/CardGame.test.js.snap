@@ -284,30 +284,6 @@ exports[`should render 1`] = `
         class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
         style="color: black;"
       >
-        🂬
-      </h1>
-      <h1
-        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
-        style="color: red;"
-      >
-        🂼
-      </h1>
-      <h1
-        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
-        style="color: black;"
-      >
-        🃜
-      </h1>
-      <h1
-        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
-        style="color: red;"
-      >
-        🃌
-      </h1>
-      <h1
-        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
-        style="color: black;"
-      >
         🂭
       </h1>
       <h1
