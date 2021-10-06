@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from '@testing-library/react';
+import CardGame from './CardGame';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('should render', () => {
+  const { asFragment } = render(<CardGame />);
+  expect(asFragment()).toMatchSnapshot();
 });
