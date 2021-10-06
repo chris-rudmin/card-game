@@ -1,6 +1,6 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 
@@ -22,15 +22,14 @@ class Deck extends React.Component {
         '🂫', '🂻', '🃛', '🃋',
         '🂭', '🂽', '🃝', '🃍',
         '🂮', '🂾', '🃞', '🃎',
-      ]
+      ].map((card, cardIndex) => {
+        const color = cardIndex%2 ? 'red' : 'black';
+        const fontSize = '12em';
+        return (
+          <Grid style={{color, fontSize}} key={cardIndex} item>{card}</Grid>
+        );
+      })
     };
-
-    this.state.cards = this.state.cards.map((card, cardIndex) => {
-      const color = cardIndex%2 ? 'red' : 'black';
-      return (
-        <Typography style={{color}} variant='h1' key={cardIndex}>{card}</Typography>
-      );
-    })
   }
 
   shuffle() {
@@ -39,7 +38,7 @@ class Deck extends React.Component {
       let temp;
 
       // Fisher–Yates shuffle
-      for (var i = shuffledCards.length - 1;  i > 0; i--) {
+      for (var i = shuffledCards.length - 1; i > 0; i--) {
         const card2Index = Math.floor(Math.random() * (i+1));
         temp = shuffledCards[card2Index];
         shuffledCards[card2Index] = shuffledCards[i];
@@ -57,7 +56,9 @@ class Deck extends React.Component {
     return (
       <Container fixed>
         <Button onClick={() => this.shuffle()}>Shuffle</Button>
-        <div>{cards}</div>
+        <Grid container spacing={1}>
+          {cards}
+        </Grid>
       </Container>
     );
   }
