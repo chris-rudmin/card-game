@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import CardGame from './CardGame/CardGame';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline />
-    <App />
+    <CardGame />
   </React.StrictMode>,
   document.getElementById('root')
 );
