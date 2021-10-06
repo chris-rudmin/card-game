@@ -3,9 +3,356 @@
 exports[`should render 1`] = `
 <DocumentFragment>
   <div
-    class="CardGame"
+    class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-1ss2ei0-MuiContainer-root"
   >
-    Card Game
+    <button
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Shuffle
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <div>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂡
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂱
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃑
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃁
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂢
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂲
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃒
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃂
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂣
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂳
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃓
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃃
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂤
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂴
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃔
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃄
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂥
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂵
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃕
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃅
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂦
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂶
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃖
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃆
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂧
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂷
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃗
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃇
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂨
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂸
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃘
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃈
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂩
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂹
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃙
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃉
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂪
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂺
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃚
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃊
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂫
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂻
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃛
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃋
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂬
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂼
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃜
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃌
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂭
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂽
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃝
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃍
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🂮
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🂾
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: black;"
+      >
+        🃞
+      </h1>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+        style="color: red;"
+      >
+        🃎
+      </h1>
+    </div>
   </div>
 </DocumentFragment>
 `;
