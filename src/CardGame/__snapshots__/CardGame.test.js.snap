@@ -2,32 +2,170 @@
 
 exports[`should render 1`] = `
 <DocumentFragment>
-  <div
-    class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-1ss2ei0-MuiContainer-root"
-  >
-    <button
-      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
-      tabindex="0"
-      type="button"
+  <div>
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-f4kjy8-MuiPaper-root-MuiAppBar-root"
     >
-      Shuffle
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
-    </button>
-    <button
-      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
-      tabindex="0"
-      type="button"
-    >
-      Draw Card
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
-    </button>
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
+      >
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-1f8a19r-MuiTypography-root"
+        >
+          Ace's High
+        </h5>
+        <button
+          class="MuiButton-root MuiButton-outlined MuiButton-outlinedInherit MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorInherit MuiButtonBase-root css-11jqx3f-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          New Game
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </header>
     <div
-      class="MuiBox-root css-11rdiq8"
-    />
+      class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-1ss2ei0-MuiContainer-root"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-subtitle css-37jdci-MuiTypography-root"
+      >
+        Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is high and in the case of a tie, the damage multiplier is increased for a maximum of 3x damage.
+      </span>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1yi2nts-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-1a8jlry-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1ce4axg-MuiPaper-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Player 1
+            </h6>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1fdpgu7-MuiGrid-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-nmy1ir-MuiSvgIcon-root"
+                  data-testid="FavoriteIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-1ghyu43-MuiGrid-root"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="100"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-ro1qlq-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(0%);"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root css-amhqb"
+              direction="column"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2 css-jno926-MuiGrid-root"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <button
+              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-jh47zj-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              BATTLE
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+            >
+              Remaining: 52
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-1a8jlry-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1ce4axg-MuiPaper-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Player 2
+            </h6>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1fdpgu7-MuiGrid-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-nmy1ir-MuiSvgIcon-root"
+                  data-testid="FavoriteIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-1ghyu43-MuiGrid-root"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="100"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-ro1qlq-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(0%);"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root css-amhqb"
+              direction="column"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

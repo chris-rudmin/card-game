@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, AppBar, Toolbar, Typography, Grid } from '@mui/material';
+import { Container, Button, AppBar, Toolbar, Typography, Grid, Box } from '@mui/material';
 import Deck from '../Deck';
 import Player from '../Player/Player';
 
@@ -37,7 +37,7 @@ class CardGame extends React.Component {
   renderCard(card) {
     const color = (card.suit === 'b' || card.suit === 'c') ? 'red' : 'black';
     const fontSize = '16em';
-    const lineHeight = '0.7em';
+    const lineHeight = '0.8em';
     return <span style={{color, fontSize, lineHeight}}>{card.card}</span>
   }
 
@@ -60,21 +60,27 @@ class CardGame extends React.Component {
           marginBottom: '3em'
         }}>
           <Toolbar>
-            <Typography variant="h5">Ace's High</Typography>
+            <Typography variant="h5" sx={{ flexGrow: 1 }}>Ace's High</Typography>
+            <Button onClick={() => this.newGame()} variant="outlined" size="small" color='inherit'>New Game</Button>
           </Toolbar>
         </AppBar>
 
         <Container fixed>
-          <Typography variant="subtitle">Defeat your opponent by winning the high card draw. Each win does damage to your opponent. Ace is high and in the case of a tie, the damage multiplier is increased for a maximum of 3x damage.</Typography>
+          <Typography variant="subtitle">Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is high and in the case of a tie, the damage multiplier is increased for a maximum of 3x damage.</Typography>
 
           <Grid container spacing={2} sx={{marginTop: '2em', textAlign: 'center'}}>
             <Grid item xs={12} md={5}>
               <Player playerNumber='1' playerDraw={player1Draw} playerHealth={player1Health}/>
             </Grid>
-            <Grid item xs={12} md={2}>
-              <Button onClick={() => this.newGame()} variant="outlined" size="small">New Game</Button>
-              <Button onClick={() => this.battle()} variant="contained" size="large">BATTLE</Button>
-              <Typography variant="subtitle">Remaining cards: {52 - battleCount}</Typography>
+            <Grid item xs={12} md={2} sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <Box>
+                <Button onClick={() => this.battle()} variant="contained" size="large">BATTLE</Button>
+                <Typography variant="subtitle2">Remaining: {52 - battleCount}</Typography>
+              </Box>
             </Grid>
             <Grid item xs={12} md={5}>
               <Player playerNumber='2' playerDraw={player2Draw} playerHealth={player2Health}/>
