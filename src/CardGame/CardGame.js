@@ -136,9 +136,9 @@ class CardGame extends React.Component {
 
         <Container fixed>
           <Typography variant="subtitle1" sx={{ marginBottom: '2em' }}>
-            Defeat your opponent by winning the high card draw. Each win does damage to your opponent.
-            The damage is calculated by the difference in card values.
-            Ace is the high card. In the case of a tie, the damage multiplier increases for a maximum of 6x damage.
+            Defeat your opponent by winning the high card draw. Each battle consists of both players pulling one card from the top of their deck. Each win does damage to your opponent.
+            The damage is proportional to the difference in card values.
+            Ace is the trump card. In the case of a tie, the damage multiplier increases for a maximum of 6x damage.
           </Typography>
 
           {gameOver ? (
