@@ -144,12 +144,12 @@ class CardGame extends React.Component {
           {gameOver ? (
             <Paper elevation={3} sx={{ padding: '1em', textAlign: 'center' }}>
               <Typography variant="h2" sx={{ marginBottom: '1em', marginTop: '1em' }}>
-                { winner === 0 ? `Stalemate!` : `Player ${winner} is victorious!` }
+                { winner ? `Player ${winner} is victorious!` : `Stalemate!` }
               </Typography>
               <Button onClick={() => this.newGame()} variant="outlined" size="large">Play Again</Button>
             </Paper>
           ) : (
-            <Grid container spacing={2} sx={{textAlign: 'center'}}>
+            <Grid container spacing={2} sx={{ textAlign: 'center' }}>
 
               <Grid item xs={12} md={5}>
                 <Player playerNumber='1' playerDraw={player1Draw} playerHealth={player1Health}/>
