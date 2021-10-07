@@ -29,13 +29,13 @@ exports[`should render 1`] = `
     <div
       class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-1ss2ei0-MuiContainer-root"
     >
-      <span
-        class="MuiTypography-root MuiTypography-subtitle css-37jdci-MuiTypography-root"
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-1yngwc1-MuiTypography-root"
       >
-        Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is high and in the case of a tie, the damage multiplier is increased for a maximum of 3x damage.
-      </span>
+        Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is high and in the case of a tie, the damage multiplier increases for a maximum of 6x damage.
+      </h6>
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1yi2nts-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-wqlzxc-MuiGrid-root"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-1a8jlry-MuiGrid-root"
@@ -90,7 +90,7 @@ exports[`should render 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2 css-jno926-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2 css-zfpenp-MuiGrid-root"
         >
           <div
             class="MuiBox-root css-0"

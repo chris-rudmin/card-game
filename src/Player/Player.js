@@ -12,7 +12,7 @@ export default function Player({ playerNumber, playerHealth, playerDraw }) {
           <FavoriteIcon sx={{ color: 'red' }} fontSize="small"/>
         </Grid>
         <Grid item xs={11}>
-          <LinearProgress variant="determinate" value={100} sx={{
+          <LinearProgress variant="determinate" value={playerHealth} sx={{
             height: 10,
             borderRadius: 5,
             marginTop: '0.4em',
