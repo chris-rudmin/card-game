@@ -33,7 +33,7 @@ class Deck {
     const card = this.cards.pop();
 
     if (card) {
-      // Card unicode values are in format U+1F0A1 with the last two bytes representing the suit and the rank
+      // Card unicode values are in format U+1F0A1 with the last two hex values representing the suit and the rank
       const hex = card.codePointAt(0).toString(16).split('');
 
       // Values 1 to 14 representing ace through king
