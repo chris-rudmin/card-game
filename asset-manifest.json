@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/card-game/static/js/main.1064b231.chunk.js",
-    "main.js.map": "/card-game/static/js/main.1064b231.chunk.js.map",
+    "main.js": "/card-game/static/js/main.80d84a9a.chunk.js",
+    "main.js.map": "/card-game/static/js/main.80d84a9a.chunk.js.map",
     "runtime-main.js": "/card-game/static/js/runtime-main.0b320198.js",
     "runtime-main.js.map": "/card-game/static/js/runtime-main.0b320198.js.map",
     "static/js/2.196d8544.chunk.js": "/card-game/static/js/2.196d8544.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.0b320198.js",
     "static/js/2.196d8544.chunk.js",
-    "static/js/main.1064b231.chunk.js"
+    "static/js/main.80d84a9a.chunk.js"
   ]
 }
