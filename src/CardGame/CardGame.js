@@ -127,7 +127,7 @@ class CardGame extends React.Component {
     return (
       <div>
         <AppBar position="static" sx={{
-          marginBottom: '3em'
+          marginBottom: '2em'
         }}>
           <Toolbar>
             <Typography variant="h5" sx={{ flexGrow: 1 }}>Ace's High</Typography>
@@ -136,7 +136,11 @@ class CardGame extends React.Component {
         </AppBar>
 
         <Container fixed>
-          <Typography variant="subtitle1" sx={{ marginBottom: '2em'}}>Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is high and in the case of a tie, the damage multiplier increases for a maximum of 6x damage.</Typography>
+          <Typography variant="subtitle1" sx={{ marginBottom: '2em'}}>
+            Defeat your opponent by winning the high card draw. Each win does damage to your opponent.
+            The damage is calculated by the difference in card values.
+            Ace is the high card. In the case of a tie, the damage multiplier increases for a maximum of 6x damage.
+          </Typography>
 
           {gameOver ? (
             <Paper elevation={3} sx={{ padding: '1em', textAlign: 'center' }}>
