@@ -4,7 +4,7 @@ exports[`should render 1`] = `
 <DocumentFragment>
   <div>
     <header
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-f4kjy8-MuiPaper-root-MuiAppBar-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-vsogsv-MuiPaper-root-MuiAppBar-root"
     >
       <div
         class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
@@ -32,7 +32,7 @@ exports[`should render 1`] = `
       <h6
         class="MuiTypography-root MuiTypography-subtitle1 css-1yngwc1-MuiTypography-root"
       >
-        Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is high and in the case of a tie, the damage multiplier increases for a maximum of 6x damage.
+        Defeat your opponent by winning the high card draw. Each win does damage to your opponent. The damage is calculated by the difference in card values. Ace is the high card. In the case of a tie, the damage multiplier increases for a maximum of 6x damage.
       </h6>
       <div
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-wqlzxc-MuiGrid-root"
