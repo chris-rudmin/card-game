@@ -78,6 +78,7 @@ class CardGame extends React.Component {
           player2Damage = (15 - player2Draw.rank) * damageMultiplier;
         }
 
+        // Ace trumps
         else if (player2Draw.rank === 1) {
           player1Damage = (15 - player1Draw.rank) * damageMultiplier;
         }
@@ -126,9 +127,7 @@ class CardGame extends React.Component {
 
     return (
       <div>
-        <AppBar position="static" sx={{
-          marginBottom: '2em'
-        }}>
+        <AppBar position="static" sx={{ marginBottom: '2em' }}>
           <Toolbar>
             <Typography variant="h5" sx={{ flexGrow: 1 }}>Ace's High</Typography>
             <Button onClick={() => this.newGame()} variant="outlined" size="small" color='inherit'>New Game</Button>
@@ -136,7 +135,7 @@ class CardGame extends React.Component {
         </AppBar>
 
         <Container fixed>
-          <Typography variant="subtitle1" sx={{ marginBottom: '2em'}}>
+          <Typography variant="subtitle1" sx={{ marginBottom: '2em' }}>
             Defeat your opponent by winning the high card draw. Each win does damage to your opponent.
             The damage is calculated by the difference in card values.
             Ace is the high card. In the case of a tie, the damage multiplier increases for a maximum of 6x damage.
@@ -144,14 +143,18 @@ class CardGame extends React.Component {
 
           {gameOver ? (
             <Paper elevation={3} sx={{ padding: '1em', textAlign: 'center' }}>
-              <Typography variant="h2" sx={{ marginBottom: '1em', marginTop: '1em'}}>{ winner === 0 ? `Game is stalemate!` : `Player ${winner} is victorious!`}</Typography>
+              <Typography variant="h2" sx={{ marginBottom: '1em', marginTop: '1em' }}>
+                { winner === 0 ? `Stalemate!` : `Player ${winner} is victorious!` }
+              </Typography>
               <Button onClick={() => this.newGame()} variant="outlined" size="large">Play Again</Button>
             </Paper>
           ) : (
             <Grid container spacing={2} sx={{textAlign: 'center'}}>
+
               <Grid item xs={12} md={5}>
                 <Player playerNumber='1' playerDraw={player1Draw} playerHealth={player1Health}/>
               </Grid>
+
               <Grid item xs={12} md={2} sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -164,6 +167,7 @@ class CardGame extends React.Component {
                   <Typography variant="subtitle2">Remaining: {52 - battleCount}</Typography>
                 </Box>
               </Grid>
+
               <Grid item xs={12} md={5}>
                 <Player playerNumber='2' playerDraw={player2Draw} playerHealth={player2Health}/>
               </Grid>
