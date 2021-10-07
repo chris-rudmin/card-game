@@ -32,17 +32,19 @@ class Deck {
   drawOne() {
     const card = this.cards.pop();
 
-    // Card unicode values are in format U+1F0A1 with the last two bytes representing the suit and the rank
-    var cardHex = card.codePointAt(0).toString(16).split('');
-    const cardValueHex = cardHex.pop();
-    const cardSuitHex = cardHex.pop();
+    if (card) {
+      // Card unicode values are in format U+1F0A1 with the last two bytes representing the suit and the rank
+      const hex = card.codePointAt(0).toString(16).split('');
 
-    return {
-      card: card, // unicode representation of the card
-      suit: cardSuitHex, // 'a', 'b', 'c', 'd' representing spades, hearts, diamonds and clubs
-      rank: parseInt(cardValueHex, 16), // values 1 to 14 representing ace through king. Value 12 is "knight" which is not used in our deck.
-    };
+      // Values 1 to 14 representing ace through king
+      // Value 12 is for "knight" which is not used in our deck
+      const rank = parseInt(hex.pop(), 16); 
+      
+      // 'a', 'b', 'c', 'd' representing spades, hearts, diamonds and clubs respectively
+      const suit = hex.pop(); 
 
+      return { card, suit, rank };
+    }
   }
 }
 
